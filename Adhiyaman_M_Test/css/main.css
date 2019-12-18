@@ -1,0 +1,707 @@
+/*===Font Family===*/
+/*---ProximaNova-Regular---*/
+@font-face {
+   font-family: proximaNova-Regular;   
+   src: url(fonts/proxima-nova-regular.ttf); 
+   src: url(fonts/proxima-nova-regular.ttf); 
+ }
+
+/*---ProximaNova-semibold---*/
+@font-face {
+   font-family: proximaNova-semibold; 
+   src: url(fonts/proxima-nova-semibold.ttf);
+   src: url(fonts/proxima-nova-semibold.woff2); 
+ }
+
+/*---ProximaNova-Light---*/
+@font-face {
+   font-family: proximaNova-Light;  
+   src: url(fonts/proxima-nova-light.ttf);
+   src: url(fonts/proxima-nova-light.woff2); 
+ }
+
+/*---Roboto-Light---*/
+@font-face {
+   font-family: Roboto-Light;  
+   src: url(fonts/roboto-light.ttf);
+   src: url(fonts/roboto-light.woff2); 
+ }
+
+/*===Font Family===*/
+
+
+/*===Normalize css=== */
+*, ul {
+   margin: 0px;
+   padding: 0px;
+}
+*:focus, *:active{outline: none}
+li {
+   list-style-type: none;
+}
+.clearfix{
+   clear:both;
+}
+.clearfix:before,.clearfix:after{
+   content:"";
+   display:table;
+   line-height:0;   
+}
+.clearfix:after{
+   clear:both
+}
+a{
+	text-decoration:none;
+}
+.container-custom{
+  width: 100%; 
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.sprite{
+   background: url('../images/Sprite.png')  no-repeat;
+}
+/*===Normalize css===*/
+
+/*===Variables===*/
+:root{
+
+   /*---For Colors---*/
+   --color_base_text     	:	#525252;
+   --color_base_white	   :	#FFFFFF;
+   --color_heading_white	:	#F6F8FC;
+   --color_tick	         :	#6E78B4;
+   --color_lable	         :	#666666;
+   --color_black_dark   	:	#222222;
+   --color_black_light  	:	#333333;
+   --color_gold		      :	#CFA622;
+   --color_blue			   :	#8ab5d5;
+   --color_base_link    	:	#06c587;
+   --color_widget_heading	:	#646464;
+   --color_bold_text       :  #0F334F;
+
+   /*---For Fonts---*/
+   --ff_base      : "proximaNova-semibold";  
+   --ff_p_regular : "proximaNova-Regular";
+   --ff_p_light   : "proximaNova-Light";
+   --ff_r_light   : "Roboto-Light"; 
+    
+   /*---For Fonts size---*/
+   --fs_xs					: 	12px;
+	--fs_s					: 	14px;
+   --fs_base				: 	16px;
+   --fs_base_xs			: 	18px;
+   --fs_base_ms			: 	19px;
+   --fs_base_s			   : 	20px;
+   --fs_lg_xs			   : 	24px;
+   --fs_lg_mx			   : 	26px;
+	--fs_lg_xs				: 	32px;
+	--fs_xl_ms				: 	36px;
+   --fs_xxl_s			   : 	38px;
+   --zero               : 0 ; 
+   
+   /*---For Font weight---*/
+	--fw_normal				: 	400;
+	--fw_medium				: 	500;
+   --fw_bold				: 	700;
+   
+   /*---For Font Style---*/
+	--fw_italic				: 	italic;
+   
+   /*---For Line height--- */
+   --lh_base				:134%;
+   --lh_heading         : 120%;
+   --lh_text            : 150%;
+   --lh_link            : 115%; 
+   --lh_widget_heading  : 86%; 
+
+   /*---For Shadow---*/ 
+	--bs_base_text				: 0px -2px rgba(0, 0, 0, 10%);
+   --bs_base_background		: 0px -4px 	#04AF78;
+   --bs_footer             : #28292e;
+   
+   /*---For Background---*/
+   --color_background     	:	#27292F;
+   --color_subscription          : #f7f8fc;
+   --color_dark            : #ff5959;
+}
+
+/*===Variables===*/
+
+body{
+   font-size: var(--fs_base); 
+   font-family: var(--ff_p_regular);  
+   background-color: var(--color_base_white)
+}
+
+
+
+/*===Subscription Start===*/
+     .subscription{
+        background-color: var( --color_subscription);
+        padding: 40px 0px;
+     }
+     .subscription__heading h1{
+        font-family: var( --ff_base);
+        font-size: var(--fs_xl_ms);
+        color: var(--color_base_text);
+        margin: var(--zero)
+     }
+     .subscription__heading p{
+      font-family: var(--ff_p_light);
+      font-size: var(--fs_base_xs);
+      color: var(--color_lable);
+      line-height: var(--lh_base); 
+      width: 222px;
+      margin: 0 auto;
+      margin-top: 27px;
+     }
+     .subscription__demo {
+      margin: 50px 0px;
+    }
+     .subscription__demo .row{
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: flex;
+      -webkit-box-align: center;
+	   -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+       justify-content: center;
+       margin: 0 auto;
+       width: auto
+     }
+     .subscription__demo .row .subscription__heading{
+       flex: 0 0 20%; 
+     }
+     .subscription__demo .row .subscription__parent{
+      flex: 0 0 40%;
+      display: flex;
+      align-items: center;
+      width: 100%;
+      justify-content: center;
+    }
+     .subscription__heading span{
+      font-family: var( --ff_base);
+      color: var(--color_blue);
+      font-size: var(--fs_s);
+	  font-style:var(--fw_italic);
+     }
+     .subscription__parent{
+      margin: 0px 10px;
+     }
+      .subscription__heading-pay span{
+         color: var(--color_gold);
+      } 
+      .subscription__button{
+         background-color: var(--color_base_link);
+         border: none;
+         box-shadow: inset var( --bs_base_background);
+         padding: 20px;
+         border-radius: 8px;
+         border-radius: 6px;
+         width: 290px;
+      }
+      .subscription__button span{ 
+         font-size: var(--fs_base_xs);
+         color: var(--color_base_white);
+         text-shadow: var(--bs_base_text);
+         font-family: var( --ff_base);
+      }
+      .navigate {
+         margin-top: 90px;
+      }
+      .navigate__para p{
+         font-size: var( --fs_base); 
+         color:var(--color_widget_heading);
+         margin-bottom: 18px;
+         font-weight: var(--fw_bold);
+      }
+      .navigate__para small i{
+         width: var( --fs_xxl_s);
+         height: var( --fs_xxl_s);
+         background-color: var(--color_widget_heading); 
+         font-size:var(--fs_xxl_s);
+         color:var(--color_base_white);
+         border-radius: 50%;
+         font-size: 20px;
+         line-height: 38px;
+      }
+      
+/*===Subscription End===*/
+
+/* ===PaymentSubscription Start=== */
+   .paymentProgress{
+      background-color: var(--color_dark);
+      padding: 65px 0px 55px 0px;
+   }
+   .paymentProgress__heading h2{
+      margin: var( --zero);
+      font-size: 26px;
+      color: var(--color_heading_white);
+   }
+   .paymentProgress__tab {
+      margin-top: 30px;
+  }
+  .paymentProgress__tab .nav {
+     width: 100%;
+   margin: 0 auto;
+   border-bottom: none;
+   display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: flex;
+      -webkit-box-align: center;
+	   -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: flex-start;;
+      -ms-flex-pack: flex-start;;
+       justify-content: flex-start; 
+       position: relative;
+      left: -110px; 
+   }
+   .nav-tabs>li {
+      margin: 0px 15px;
+  } 
+  .nav li:nth-child(n+4)::after {
+   content: '';
+  }
+  .paymentProgress__tab .nav > li a{
+     font-family: var(--ff_p_light);
+     font-size: var(--fs_base_ms);
+     color: rgba(246,248,252,80%); 
+     border:1px solid var(--color_heading_white);
+     width: 145px;
+     border-radius: 30px;
+  }
+  .paymentProgress__tab .nav > li.active a{
+     color: var(--color_bold_text)
+  }
+  .paymentProgress__tab .nav > li a:hover {
+   color: var(--color_bold_text);
+  }  
+  .nav-tabs>li::after {
+   content: '-----';
+   position: absolute;
+   top: 13px;
+   right: -27px;
+   color: #fff;
+}
+.paymentSubscription .tab-content {
+   max-width: 950px;
+   margin: 0 auto;
+}
+.paymentSubscription__row {
+   display: flex;
+   align-items: center;
+   max-width: 960px;
+}
+.payment__parent {
+   height: auto;
+   width: 100%;
+   margin: 0 auto;
+   text-align: center;
+}
+.payment__topchild {
+  width: 100%;
+}
+.payment__bottomchild .payment__circle {
+   border: 2px solid #4e708c;
+   width: 47px;
+   height: 47px;
+   display: inline-block;
+   border-radius: 50%;
+}
+.payment__bottomchild {
+   padding-top: 30px;
+}
+.paymentSubscription__right {
+   margin-left: 90px;
+}
+.paymentSubscription__right h2{
+   font-family: var( --ff_base);
+}
+.paymentSubscription__heading{
+   font-size: var(--fs_xl_ms); 
+  color: var(--color_heading_white)
+}
+.paymentSubscription__heading-charge{
+   font-size: var(--fs_base_s)
+}
+/*===PaymentSubscription End===*/
+
+/*===RecurringBilling Start=== */
+.recurringBilling {
+    background-color: var(--color_base_white);
+    padding: 50px 0px;
+} 
+.recurringBilling__parent {
+   display: block;
+}
+.recurringBilling__left {
+   width: 100%;
+}
+.recurringBilling__left h2{
+   margin: 0px;
+   font-family: var(--ff_base);
+   
+   color: var( --color_base_text ); 
+}
+.recurringBilling__header p {
+   margin-bottom: 0px;
+   margin-top: 10px;
+   color: var( --color_base_text );  
+} 
+.recurringBilling__right {
+   width: 100%;
+   margin-top: 20px;
+}
+.recurringBilling__header {
+   margin-bottom: 40px;
+}
+.recurringBilling__li {
+   padding-left: 40px;
+   margin-bottom: 30px;
+}
+.recurringBilling__li:last-child {
+   margin-bottom: 0px;
+} 
+.recurringBilling__li h6 {
+   position: relative;
+   font-family: var(--ff_base);
+   font-size: var(--fs_base_xs);
+   margin-top: 0px; 
+   line-height: var(--lh_base);
+}
+.recurringBilling__li h6 span {
+   position: absolute;
+   left: -34px;
+   color:var(--color_tick);
+   font-size: var(--fs_base);	
+   font-weight: var(--fw_bold);
+   top: 3px; 
+}
+.recurringBilling__li p{
+   color:var( --color_widget_heading);
+   line-height: var( --lh_text);
+   margin-bottom: var(--zero)
+}
+.recurringBilling__right h3{
+  font-family:var(--ff_p_light);  
+  font-size:var( --fs_lg_mx);
+  color:var(--color_base_text );
+   line-height:var( --lh_heading); 
+   margin: var(--zero)   
+}
+.recurringBilling__widget {
+   margin-top: 20px;
+}
+.recurringBilling__heading { 
+   margin-bottom: 30px;
+}
+.recurringBilling__heading p{
+   color:var(--color_widget_heading);
+   font-size:var( --fs_base); 
+   border-bottom: 2px solid #efefef;
+   padding-bottom: 15px;
+   margin-bottom: 20px; 
+   position: relative;
+}
+.recurringBilling__heading p::before, .recurringBilling__heading p::after {
+   content: "";
+   position: absolute;
+   width: 0;
+   height: 0;
+   border-style: solid;
+   border-color: transparent;
+   border-bottom: 0;
+}
+.recurringBilling__heading p:before {
+   bottom: -16px;
+   left: 21px;
+   border-top-color: hsl(0, 3%, 79%);  
+   border-width: 16px;
+}
+.recurringBilling__heading p:after {
+   bottom: -15px;
+   left: 22px;
+   border-top-color:var(--color_base_white);
+   border-width: 15px; 
+}
+.recurringBilling__hfooterl {
+   float: left;
+   width: 40px;
+   height: 40px;
+}
+.recurringBilling__hfooterr {
+   float: left;
+   margin-left: 12px;
+}
+.recurringBilling__hfooterr h6 {
+   font-family: var(--ff_base);
+   margin-top: 0px;
+   font-size: var(--fs_s);
+   color: var(--color_widget_heading);
+   line-height: var( --lh_widget_heading);
+} 
+.recurringBilling__hfooterr p{margin-bottom: 0px;}
+.recurringBilling__hfooterr p a{
+   font-family: var(--ff_base);
+   font-size: var(--fs_s);
+   line-height: var( --lh_link); 
+   color:var(--color_base_link );
+}
+/*===RecurringBilling End=== */
+
+
+/*===Customers Start=== */
+.customers {
+   background-color: var( --bs_footer);
+   padding: 70px 0px;
+}
+.customers__logo {
+   display: flex;
+   flex-wrap: wrap;
+   width: 100%;
+   justify-content: space-between;
+   align-items: center;
+}
+.customers__logo li {
+   flex: 0 0 47%;
+   margin-bottom: 30px;
+} 
+.customers__logo li:nth-child(n+3){
+   margin-bottom: 0px;
+}
+.soylent, .freshdesk,.integrated,.enerspace,.vinyl {width: 140px;}
+
+.footer{background-color: var(--color_base_white); padding: 30px 0px}
+.footer_list{
+   display: block;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+} 
+.footer_list li {
+   margin-bottom: 20px; 
+}
+.footer_list li a {
+   text-decoration: none;
+   font-family: var(--ff_r_light);
+   font-size: var(--fs_xs);
+   color: var(--color_black_dark);
+} 
+.footer_list li a img {
+   width: 115px;
+}
+.logo-lg {
+   display: none;
+}
+/*===Customers Start End=== */
+
+/*===Animations Start===*/
+.animatable {  
+  visibility: hidden;
+  -webkit-animation-play-state: paused;   
+  -moz-animation-play-state: paused;     
+  -ms-animation-play-state: paused;
+  -o-animation-play-state: paused;   
+  animation-play-state: paused; 
+}
+.animated {
+  visibility: visible;
+  
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+  
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+  -ms-animation-duration: 2s;
+  -o-animation-duration: 2s;
+  animation-duration: 2s;
+
+  -webkit-animation-play-state: running;
+  -moz-animation-play-state: running;
+  -ms-animation-play-state: running;
+  -o-animation-play-state: running;
+  animation-play-state: running;
+}
+@-webkit-keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		-webkit-transform: translateY(20px);
+	}	100% {
+		opacity: 1;
+		-webkit-transform: translateY(0);
+	}
+}
+@-moz-keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		-moz-transform: translateY(20px);
+	}
+	100% {
+		opacity: 1;
+		-moz-transform: translateY(0);
+	}
+}
+@-o-keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		-o-transform: translateY(20px);
+	}
+	100% {
+		opacity: 1;
+		-o-transform: translateY(0);
+	}
+}
+@keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+.animated.animationDelay{
+	animation-delay:.4s;
+	-webkit-animation-delay:.4s;
+}
+.animated.animationDelayMed{
+	animation-delay:1.2s;
+	-webkit-animation-delay:1.2s;
+}
+.animated.animationDelayLong{
+	animation-delay:1.6s;
+	-webkit-animation-delay:1.6s;
+}
+.animated.fadeBgColor {
+	-webkit-animation-name: fadeBgColor;
+	-moz-animation-name: fadeBgColor;
+	-o-animation-name: fadeBgColor;
+	animation-name: fadeBgColor;
+}
+.animated.fadeInUp {
+	-webkit-animation-name: fadeInUp;
+	-moz-animation-name: fadeInUp;
+	-o-animation-name: fadeInUp;
+	animation-name: fadeInUp;
+}
+/*===Animations End===*/
+
+/*=====//Responsive CSS//=====*/
+@media only screen and (min-width: 768px) {	
+
+/*===Subscription Responsive Start=== */
+      .subscription{
+         padding: 110px 0px 65px 0px; 
+      }
+      .subscription__parent img{
+         width: 229px;
+         height: 207px;
+         margin: 0 auto;
+      }
+      .subscription__heading p{
+         width: 370px;
+      }
+      .subscription__heading span{
+         font-size: var(--fs_base_s);
+      }
+
+      .subscription__demo .row{
+         width: 50%;
+      }
+      .subscription__demo .row .subscription__parent{
+         width: 229px;
+         height: 207px;  
+         flex: none;
+      }
+      .subscription__demo .row .subscription__heading{
+         flex: none
+      }
+      .container-custom{
+         max-width: 1048px;
+         margin: 0 auto;
+      } 
+        
+/*===Subscription Responsive End===*/
+
+/*===PaymentSubscription Responsive===*/
+   .paymentProgress__heading h2{font-size: var(--fs_lg_xs);}
+   .paymentProgress__tab .nav{
+      width: 545px;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+       justify-content: center;
+       position: static;
+   }
+   .paymentSubscription{
+      background-color: #0f3653;
+      padding-bottom: 118px; 
+   }
+   .payment__parent{ 
+      height: 580px; 
+      width: 360px; 
+      border-top: 0px;
+      border-bottom-left-radius: 50px;
+      border-bottom-right-radius: 50px; 
+      border: 2px dashed #4e708c;
+      border-top-width: 0px; 
+   }
+   .payment__topchild{
+      width: 320px;
+      height: 475px;
+      margin: 0 auto; 
+   }
+
+/* ===RecurringBilling Responsive Start==== */
+   .recurringBilling__left h2{font-size:var(--fs_lg_xs);}
+   .recurringBilling{ padding: 110px 0px;}
+   .recurringBilling__parent{
+      display: flex; 
+     justify-content: space-between;
+   }
+   .recurringBilling__left {
+      float: left;
+      width: 610px;
+   }
+   .recurringBilling__right {
+      width: 380px;
+   }
+   .recurringBilling__widget {
+      margin-top: 45px;
+   }
+/*===RecurringBilling Billings End===*/
+
+/* ===Customer Responsive Start=== */
+   .footer{padding: 60px 0px}
+   .customers__logo li {
+      flex: 0 0 0%;
+      margin-bottom: 0px;
+  } 
+   .footer_list {
+      display: flex; 
+  } 
+   .soylent {width: 140px;}
+   .freshdesk {width: 175px;}
+   .integrated {width: 203px;}
+   .enerspace {width: 165px} 
+   .vinyl {width: 95px;} 
+   .footer_list li {
+      margin: 0px 30px;
+  } 
+  .logo-sm{display: none} 
+  .logo-lg{display: block !important;}
+  /*===Customer Responsive End===*/
+}
+
+
