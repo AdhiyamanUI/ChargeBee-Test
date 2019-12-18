@@ -1,11 +1,10 @@
 $(document).ready(function(){
-var $root = $('html, body');
-$('a[href^="#"]').click(function () {
-    $root.animate({
-        scrollTop: $( $.attr(this, 'href') ).offset().top
-    }, 1000);
+$(document).on('click', 'a[href^="#"]', function (event) {
+    event.preventDefault();
 
-    return false;
+    $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+    }, 1000);
 });
 var animations = function() {
     var offset = $(window).scrollTop() + $(window).height(),
