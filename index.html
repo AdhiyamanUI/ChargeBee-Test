@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chargebee</title> 
+    <!---------Start: Favicon & touch icon------------>
+        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
+    <!----------End: Favicon & touch icon------------->
+    <!-------Start: Styles--------->
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/main.css" /> 
+    <!------End: Styles-------->
+</head>
+<body>
+    <!------Start: Layout Main------->
+   <div class="main__layout">
+        <!-------Subscription Start-------->
+        <section class="subscription">
+                <div class="text-center container-custom"> 
+                    <div class="subscription__heading">
+                          <h1 class="text-uppercase">subscription business made easy</h1>
+                          <p class="animatable fadeInUp">We teamed up with Amazon to make recurring billing a breeze for you.</p>
+                    </div>
+					<!--Start subscription action-->
+                    <div class="subscription__demo"> 
+                        <div class="row">
+                            <div class="subscription__heading animatable fadeInUp"><span class="text-uppercase">chargebee</span></div>
+                            <div class="subscription__parent"> 
+                                <img class="subscription__img img-responsive" src="images/banner-image@2x.png" alt="banner">
+                            </div>
+                            <div class="subscription__heading subscription__heading-pay animatable fadeInUp"><span class="text-uppercase">pay with amazon</span></div>
+                        </div>
+                    </div>
+                    <div class="subscription__create">
+                        <button type="button" class="subscription__button"><span class="text-uppercase">SignUp & explore now</span></button>
+                    </div>
+					<!--End subscription action-->
+                    <div class="navigate visible-md visible-lg" id=""><!--Start navigate-->
+                        <div class="navigate__para">
+                            <p>Neatly integrated experience. </br> See how it works</p> 
+                            <a href="#navigate__down" id="navigate__top"><small><i class="glyphicon glyphicon-chevron-down"></i></small></a>
+                        </div>
+                    </div><!--End navigate-->
+                </div>
+        </section>
+       <!-------Subscription End-------->
+       <!-------Payment Gateway Start-------->
+       <section class="paymentProgress" id="navigate__down">
+           <div class="text-center container-custom animatable fadeInUp">
+                <div class="paymentProgress__heading">
+                    <h2>Eliminate the need for credit card entry with Login & Pay with Amazon</h2>
+                </div>
+                <div class="paymentProgress__tab"><!--tab-headline-->
+                    <ul class="nav nav-tabs">
+                        <li class="hidden-sm hidden-xs"><a data-toggle="tab" href="#checkout">Checkout</a></li>
+                        <li class="hidden-sm hidden-xs"><a data-toggle="tab" href="#payment">Payment</a></li>
+                        <li><a data-toggle="tab" href="#renewal">Renewal</a></li>
+                        <li class="active"><a data-toggle="tab" href="#portal">Portal</a></li>
+                    </ul> 
+                </div>
+           </div>
+       </section>
+       <!-------Payment Gateway End-------->
+       <!-------Subscription Payment Details  Start-------->
+       <section class="paymentSubscription">
+            <div class="tab-content container-custom"><!--tab-content-->
+                    <div id="checkout" class="tab-pane fade">
+                        <div class="paymentSubscription__row"><!--paymentSubscription__row-->
+                            <div class="paymentSubscription__left">
+                                <div class="payment__parent">
+                                    <div class="payment__topchild">
+                                        <img class="img-responsive" src="./images/checkout@2x.png" alt="">
+                                    </div>
+                                    <div class="payment__bottomchild hidden-sm hidden-xs">
+                                        <i class="payment__circle"></i>
+                                    </div> 
+                                </div>
+                            </div>
+                            <div class="paymentSubscription__right hidden-xs animatable fadeInUp">
+                                <h2 class="paymentSubscription__heading">CUSTOMER<br>PORTAL</h2>
+                                <p class="paymentSubscription__heading paymentSubscription__heading-charge">Go a step further and let your customers be in charge of theri subscriptions</p>
+                            </div> 
+                        </div><!--paymentSubscription__row-->
+                    </div>
+                    <div id="payment" class="tab-pane fade">
+                        <div class="paymentSubscription__row"><!--paymentSubscription__row-->
+                            <div class="paymentSubscription__left">
+                                <div class="payment__parent">
+                                    <div class="payment__topchild">
+                                        <img class="img-responsive" src="./images/checkout@2x.png" alt="">
+                                    </div>
+                                    <div class="payment__bottomchild hidden-sm hidden-xs">
+                                        <i class="payment__circle"></i>
+                                    </div> 
+                                </div>
+                            </div>
+                            <div class="paymentSubscription__right hidden-xs">
+                                <h2 class="paymentSubscription__heading">CUSTOMER<br>PORTAL</h2>
+                                <p class="paymentSubscription__heading paymentSubscription__heading-charge">Go a step further and let your customers be in charge of theri subscriptions</p>
+                            </div>
+                        </div>	<!--paymentSubscription__row-->
+                    </div>
+                    <div id="renewal" class="tab-pane fade">
+                        <div class="paymentSubscription__row"><!--paymentSubscription__row-->
+                            <div class="paymentSubscription__left">
+                                <div class="payment__parent">
+                                    <div class="payment__topchild">
+                                        <img class="img-responsive" src="./images/checkout@2x.png" alt="">
+                                    </div>
+                                    <div class="payment__bottomchild hidden-sm hidden-xs">
+                                        <i class="payment__circle"></i>
+                                    </div> 
+                                </div>
+                            </div>
+                            <div class="paymentSubscription__right hidden-xs animatable fadeInUp">
+                                <h2 class="paymentSubscription__heading">CUSTOMER<br>PORTAL</h2>
+                                <p class="paymentSubscription__heading paymentSubscription__heading-charge">Go a step further and let your customers be in charge of theri subscriptions</p>
+                            </div>
+                        </div><!--paymentSubscription__row-->
+                    </div>
+                    <div id="portal" class="tab-pane fade in active">
+                        <div class="paymentSubscription__row"><!--paymentSubscription__row-->
+                            <div class="paymentSubscription__left">
+                                <div class="payment__parent">
+                                    <div class="payment__topchild">
+                                        <img class="img-responsive" src="./images/checkout@2x.png" alt="">
+                                    </div>
+                                    <div class="payment__bottomchild hidden-sm hidden-xs">
+                                        <i class="payment__circle"></i>
+                                    </div> 
+                                </div>
+                            </div>
+                            <div class="paymentSubscription__right hidden-xs animatable fadeInUp">
+                                <h2 class="paymentSubscription__heading">CUSTOMER<br>PORTAL</h2>
+                                <p class="paymentSubscription__heading paymentSubscription__heading-charge">Go a step further and let your customers be in charge of theri subscriptions</p>
+                            </div> 
+                        </div><!--paymentSubscription__row-->
+                    </div>
+            </div><!--tab-content-->
+       </section>
+       <!-------Payment Details End-------->
+       <!-------Recurring Billing Details Start-------->
+       <section class="recurringBilling">
+           <div class="container-custom">
+                <div class="recurringBilling__parent">
+                    <div class="recurringBilling__left">
+                        <div class="recurringBilling__header animatable fadeInUp">
+                            <h2 class="text-uppercase">recurring billing done right</h2>
+                            <p>We’ve built the best practices required for every billing model</p>
+                        </div>
+                        <div class="recurringBilling__footer">
+                            <ul class="recurringBilling__ul">
+                                <li class="recurringBilling__li animatable fadeInUp"> 
+                                    <h6><span class="glyphicon glyphicon-ok"></span>FLEXIBLE PRICING</h6>
+                                    <p>Price your ofering the way you want to, with flexible billing periods & addons</p>
+                                </li>
+                                <li class="recurringBilling__li animatable fadeInUp"> 
+                                    <h6><span class="glyphicon glyphicon-ok"></span>AUTO INVOICING</h6>
+                                    <p>Every time a charge is made branded invoice is sent to your customers inbox</p>
+                                </li>
+                                <li class="recurringBilling__li animatable fadeInUp"> 
+                                    <h6><span class="glyphicon glyphicon-ok"></span>EMAIL NOTIFICATIONS</h6>
+                                    <p>Send automated emails to deliver value throughout your customer lifecycle.</p>
+                                </li>
+                                <li class="recurringBilling__li animatable fadeInUp"> 
+                                    <h6><span class="glyphicon glyphicon-ok"></span>SMART RETRY LOGIC</h6>
+                                    <p>Reduce failed payments by iterating and defaulting to an ideal retry logic</p>
+                                </li>
+                                <li class="recurringBilling__li animatable fadeInUp"> 
+                                    <h6><span class="glyphicon glyphicon-ok"></span>BUILT FOR TEAMS</h6>
+                                    <p>Make it easy for your team members to access information using role based access</p>
+                                </li>
+                                <li class="recurringBilling__li animatable fadeInUp"> 
+                                    <h6><span class="glyphicon glyphicon-ok"></span>POWERFUL INTEGRATIONS</h6>
+                                    <p>Do more with apps and services that give you extra features and smart automation</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="recurringBilling__right">
+                        <h3>Some of our fantastic customers</h3>
+                        <div class="recurringBilling__widgets">
+                           <div class="recurringBilling__widget animatable fadeInUp">
+                                <div class="recurringBilling__heading">
+                                    <p>ChargeBee solves a very tough problem well. I couldn't imagine another service fulling all our needs and doing it so well.</p>
+                                </div>
+                                <div class="recurringBilling__hfooter clearfix">
+                                    <div class="recurringBilling__hfooterl">
+                                        <img class="img-responsive" src="./images/holstee-logo@2x.png" alt="">
+                                    </div>
+                                    <div class="recurringBilling__hfooterr">
+                                        <h6>Thomas Reggi</h6>
+                                        <p><a href="">holstee.com</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="recurringBilling__widget hidden-xs hidden-sm animatable fadeInUp">
+                                <div class="recurringBilling__heading">
+                                    <p>After switching to ChargeBee, it has been much simpler to manage and set up is a breeze. I absolutely love the software and well worth the money</p>
+                                </div>
+                                <div class="recurringBilling__hfooter clearfix">
+                                    <div class="recurringBilling__hfooterl">
+                                        <img class="img-responsive" src="./images/integratedhealth-logo@2x.png" alt="">
+                                    </div>
+                                    <div class="recurringBilling__hfooterr">
+                                        <h6>Sunil</h6>
+                                        <p><a href="">integratedhealth.us/</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+           </div>
+        </section>
+       <!-------Recurring Billing Details End-------->
+        <!-------Customers Details Start-------->
+        <section class="customers">
+            <div class="container-custom">
+                 <ul class="customers__logo">
+                    <li><a href=""><img class="soylent" src="./images/soylent-logo@2x.png" alt="soylent"></a></li>
+                    <li><a href=""><img class="freshdesk" src="./images/freshdesk-logo@2x.png" alt="freshdesk"></a></li> 
+                    <li><a href=""><img class="integrated" src="./images/integratedhealthbw-logo@2x.png" alt="integrated"></a></li>
+                    <li><a href=""><img class="enerspace" src="./images/enerspace-logo@2x.png" alt="enerspace"></a></li>
+                    <li class="hidden-xs hidden-sm"><a href=""><img class="vinyl" src="./images/vinyl-logo@2x.png" alt="vinyl"></a></li>
+                 </ul>
+            </div>
+        </section>
+        <!-------Customers Details End-------->
+        <!-------Footer Start-------->
+        <section class="footer">
+            <div class="container-custom">
+                <ul class="footer_list">
+                    <li><a href="" class="text-uppercase">pricing</a></li>
+                    <li><a href="" class="text-uppercase">features</a></li>
+                    <li class="logo-lg"><a href=""><img src="./images/chargebee-logo-footer@2x.png" alt="" /></a></li>
+                    <li><a href="" class="text-uppercase">about</a></li> 
+                    <li><a href="" class="text-uppercase">support</a></li>
+                    <li class="logo-sm"><a href=""><img src="./images/chargebee-logo-footer@2x.png" alt="" /></a></li>
+                </ul>
+            </div>
+        </section>
+        <!-------Footer End-------->
+
+   </div>
+   <!-------Layout Main End------->
+
+   <!----------Start: Script Files----------->
+        <script type="text/javascript" src="./js/jquery.js"></script>
+        <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="./js/custom-script.js"></script> 
+   <!----------End: Script Files------------->
+</body>
+</html>
